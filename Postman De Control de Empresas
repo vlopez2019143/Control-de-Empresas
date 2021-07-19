@@ -1,0 +1,530 @@
+{
+	"info": {
+		"_postman_id": "ac8a3d30-4fdf-4838-a070-43d1e83d9f96",
+		"name": "EmpresasF",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Registrar Empresa",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Twitter",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/registrarEmpresa",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"registrarEmpresa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Twitter",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "text"
+						},
+						{
+							"key": "getToken",
+							"value": "true",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar Empresa",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDNhZjI3NTExNDQ1MDFjMTQ0OWNjZDIiLCJub21icmUiOiJGYWNlYm9vayIsInJvbCI6IlJPTF9FTVBSRVNBIiwiaWF0IjoxNjE0NDc2MjU2LCJleHAiOjE2MTQ4MjE4NTZ9.h6DEDpQT7bMUYiwRB3PCackmdgjGb4YNkuaBKg4SZlQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Twiter",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/editarEmpresa/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"editarEmpresa",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "603af2751144501c1449ccd2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Empresa",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDNhZWU2NjQ4YmVlMDJjMzQ5NWFhYjciLCJub21icmUiOiJBZG1pbmlzdHJhZG9yIiwicm9sIjoiUk9MX0FETUlOIiwiaWF0IjoxNjE0NDc4NzYxLCJleHAiOjE2MTQ4MjQzNjF9.OhO6sr-cE3WZ2fNMvgJUhm_rg8_uTY_wrv1Td6cp-Oo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api/eliminarEmpresa/:id ",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"eliminarEmpresa",
+						":id "
+					],
+					"variable": [
+						{
+							"key": "id ",
+							"value": "603af1e71144501c1449ccce"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "registrar Empleado",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDNiNDk4MTI2OWRhNTJmMjhiZGJjZmYiLCJub21icmUiOiJUd2l0dGVyIiwicm9sIjoiUk9MX0VNUFJFU0EiLCJpYXQiOjE2MTQ0OTgxOTMsImV4cCI6MTYxNTM2MjE5M30.z9wd4wzZRhqn51YBAaAZQsl3dF6-29KLLOO6ufOP20c",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "ANFiu",
+							"type": "text"
+						},
+						{
+							"key": "puesto",
+							"value": "jefe",
+							"type": "text"
+						},
+						{
+							"key": "departamento",
+							"value": "Carros",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/registrarEmpleado",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"registrarEmpleado"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editar Empleado",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDNiNDk4MTI2OWRhNTJmMjhiZGJjZmYiLCJub21icmUiOiJUd2l0dGVyIiwicm9sIjoiUk9MX0VNUFJFU0EiLCJpYXQiOjE2MTQ1NDgzMzEsImV4cCI6MTYxNTQxMjMzMX0.JdP3UMDc3mJY9rcCTlUPuIwsKDGtZUE4ECT2Le118Fs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Annie",
+							"type": "text"
+						},
+						{
+							"key": "puesto",
+							"value": "jefe",
+							"type": "text"
+						},
+						{
+							"key": "departamento",
+							"value": "Perro",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/editarEmpleado/:id/:id2",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"editarEmpleado",
+						":id",
+						":id2"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "603c06b7de7e6b1e5403d24d"
+						},
+						{
+							"key": "id2",
+							"value": "603b4981269da52f28bdbcff"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminar Empleado",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDNiNDk4MTI2OWRhNTJmMjhiZGJjZmYiLCJub21icmUiOiJUd2l0dGVyIiwicm9sIjoiUk9MX0VNUFJFU0EiLCJpYXQiOjE2MTQ0OTgxOTMsImV4cCI6MTYxNTM2MjE5M30.z9wd4wzZRhqn51YBAaAZQsl3dF6-29KLLOO6ufOP20c",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api/eliminarEmpleado/:id/:id2",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"eliminarEmpleado",
+						":id",
+						":id2"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "603b49c1269da52f28bdbd01"
+						},
+						{
+							"key": "id2",
+							"value": "603b4981269da52f28bdbcff"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BuscarId",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDNiNDk4MTI2OWRhNTJmMjhiZGJjZmYiLCJub21icmUiOiJUd2l0dGVyIiwicm9sIjoiUk9MX0VNUFJFU0EiLCJpYXQiOjE2MTQ1NDgzMzEsImV4cCI6MTYxNTQxMjMzMX0.JdP3UMDc3mJY9rcCTlUPuIwsKDGtZUE4ECT2Le118Fs",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api/buscarId/:id/:id2",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"buscarId",
+						":id",
+						":id2"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "603b4981269da52f28bdbcff"
+						},
+						{
+							"key": "id2",
+							"value": "603c0037f5b66933644bf7dd"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar nombre",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDNiNDk4MTI2OWRhNTJmMjhiZGJjZmYiLCJub21icmUiOiJUd2l0dGVyIiwicm9sIjoiUk9MX0VNUFJFU0EiLCJpYXQiOjE2MTQ1NDgzMzEsImV4cCI6MTYxNTQxMjMzMX0.JdP3UMDc3mJY9rcCTlUPuIwsKDGtZUE4ECT2Le118Fs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Annie",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/buscarNombre/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"buscarNombre",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "603b4981269da52f28bdbcff"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cantidad de empleados",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Twitter",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/CantidadEmpleado",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"CantidadEmpleado"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Puesto",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDNiNDk4MTI2OWRhNTJmMjhiZGJjZmYiLCJub21icmUiOiJUd2l0dGVyIiwicm9sIjoiUk9MX0VNUFJFU0EiLCJpYXQiOjE2MTQ1NDgzMzEsImV4cCI6MTYxNTQxMjMzMX0.JdP3UMDc3mJY9rcCTlUPuIwsKDGtZUE4ECT2Le118Fs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "puesto",
+							"value": "jefe",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/buscarPuesto/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"buscarPuesto",
+						":id"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "603b4981269da52f28bdbcff"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Departamento",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDNiNDk4MTI2OWRhNTJmMjhiZGJjZmYiLCJub21icmUiOiJUd2l0dGVyIiwicm9sIjoiUk9MX0VNUFJFU0EiLCJpYXQiOjE2MTQ1NDgzMzEsImV4cCI6MTYxNTQxMjMzMX0.JdP3UMDc3mJY9rcCTlUPuIwsKDGtZUE4ECT2Le118Fs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "departamento",
+							"value": "Carros",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/buscarDepto/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"buscarDepto",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "603b4981269da52f28bdbcff"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PDF",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDNiNDk4MTI2OWRhNTJmMjhiZGJjZmYiLCJub21icmUiOiJUd2l0dGVyIiwicm9sIjoiUk9MX0VNUFJFU0EiLCJpYXQiOjE2MTQ1NDgzMzEsImV4cCI6MTYxNTQxMjMzMX0.JdP3UMDc3mJY9rcCTlUPuIwsKDGtZUE4ECT2Le118Fs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "localhost:3000/api/Generarpdf/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"Generarpdf",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "603b4981269da52f28bdbcff"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
